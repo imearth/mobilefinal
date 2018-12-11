@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorAccent">
+    android:layout_height="match_parent">
 
     <ScrollView
-        android:layout_width="350dp"
-        android:layout_height="480dp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="15dp">
-
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
         <LinearLayout
             android:layout_width="384dp"
@@ -20,7 +19,7 @@
             tools:layout_editor_absoluteY="1dp">
 
             <EditText
-                android:id="@+id/RGUserID"
+                android:id="@+id/thisUserID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_action_name"
@@ -30,7 +29,7 @@
                 tools:text="User Id" />
 
             <EditText
-                android:id="@+id/RGName"
+                android:id="@+id/thisName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_name"
@@ -41,7 +40,7 @@
 
 
             <EditText
-                android:id="@+id/RGAge"
+                android:id="@+id/thisAge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_age"
@@ -51,7 +50,7 @@
                 tools:text="Age" />
 
             <EditText
-                android:id="@+id/RGPW"
+                android:id="@+id/thisPW"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_password"
@@ -60,15 +59,24 @@
                 android:inputType="textPassword"
                 tools:text="Password" />
 
+            <EditText
+                android:id="@+id/thisQuote"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="text"
+                tools:text="Quote"
+                android:background="@color/colorAccent" />
+
             <Button
-                android:id="@+id/RGBotton"
+                android:id="@+id/thisBotton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:text="Register new account" />
+                android:background="@color/colorPrimaryDark"
+                android:text="SAVE" />
 
 
         </LinearLayout>
-
     </ScrollView>
 </android.support.constraint.ConstraintLayout>

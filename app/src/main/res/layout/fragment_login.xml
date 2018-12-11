@@ -9,8 +9,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorAccent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="19dp">
+        tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,10 +23,11 @@
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/white"
                 app:srcCompat="@drawable/chilly" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/UserID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_action_name"
@@ -35,7 +37,7 @@
                 tools:text="User id" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/PW"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_password"
@@ -45,21 +47,27 @@
                 tools:text="Password" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/loginbutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
                 android:text="Login" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="272dp"
-                android:text="RegisterNewAccount" />
+            <Button
+                android:id="@+id/registbutton"
+                android:layout_width="219dp"
+                android:layout_height="38dp"
+                android:background="@color/colorAccent"
+                android:text="Register New Account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="10sp"
+                tools:layout_editor_absoluteX="149dp"
+                tools:layout_editor_absoluteY="425dp" />
 
         </LinearLayout>
 
     </ScrollView>
-
-
 
 
 </android.support.constraint.ConstraintLayout>
